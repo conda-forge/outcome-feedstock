@@ -1,8 +1,8 @@
 {% set name = "outcome" %}
-{% set version = "0.1.0" %}
+{% set version = "1.0.0" %}
 {% set file_ext = "tar.gz" %}
 {% set hash_type = "sha256" %}
-{% set hash_value = "d54e5d469088af53022f64a753b288d6bab0fe42e513eb7146137d560e2e516e" %}
+{% set hash_value = "9d58c05db36a900ce60c6da0167d76e28869f64b338d60fa3a61841cfa54ac71" %}
 
 package:
   name: '{{ name|lower }}'
