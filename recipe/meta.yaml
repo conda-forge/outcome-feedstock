@@ -21,10 +21,9 @@ build:
 requirements:
   host:
     - pip
-    - attrs
   run:
     - python
-    - attrs
+    - attrs  >=19.2.0
 
 test:
   imports:
