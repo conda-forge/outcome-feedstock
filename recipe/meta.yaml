@@ -1,17 +1,14 @@
 {% set name = "outcome" %}
-{% set version = "1.0.1" %}
-{% set file_ext = "tar.gz" %}
-{% set hash_type = "sha256" %}
-{% set hash_value = "fc7822068ba7dd0fc2532743611e8a73246708d3564e29a39f93d6ab3701b66f" %}
+{% set version = "1.1.0" %}
 
 package:
-  name: '{{ name|lower }}'
-  version: '{{ version }}'
+  name: {{ name|lower }}
+  version: {{ version }}
 
 source:
-  fn: '{{ name }}-{{ version }}.{{ file_ext }}'
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.{{ file_ext }}
-  '{{ hash_type }}': '{{ hash_value }}'
+  fn: {{ name }}-{{ version }}.tar.gz
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: e862f01d4e626e63e8f92c38d1f8d5546d3f9cce989263c521b2e7990d186967
 
 build:
   noarch: python
@@ -21,8 +18,9 @@ build:
 requirements:
   host:
     - pip
+    - python >=3.6
   run:
-    - python
+    - python >=3.6
     - attrs  >=19.2.0
 
 test:
@@ -33,9 +31,9 @@ about:
   home: https://github.com/python-trio/outcome
   license: MIT
   license_family: MIT
-  license_file: 'LICENSE'
+  license_file: LICENSE
   summary: Capture the outcome of Python function calls.
-  description: "Capture the outcome of Python function calls."
+  description: Capture the outcome of Python function calls.
 
 extra:
   recipe-maintainers:
