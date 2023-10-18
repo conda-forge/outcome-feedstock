@@ -1,11 +1,11 @@
-About outcome
-=============
+About outcome-feedstock
+=======================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/outcome-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/python-trio/outcome
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/outcome-feedstock/blob/main/LICENSE.txt)
 
 Summary: Capture the outcome of Python function calls.
 
